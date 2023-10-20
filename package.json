@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon ./src/index.ts",
-    "build": "tsc -p ",
+    "build": "tsc",
     "start": "mp2 start ./dist/index.js"
   },
   "dependencies": {
