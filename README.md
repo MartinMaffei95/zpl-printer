@@ -2,6 +2,10 @@
 
 Servicio para imprimir etiquetas ZPL basdo en node.
 
+## Como funciona
+
+Las impresoras de tipo ZPL no reciben comandos directamente desde el navegador.Por esto generamos un servidor local que recibe vía peticion http la data a imprimir, la procesa y ejecuta el comando `print`
+
 ## Como usar
 
 1. `yarn` (o `npm i`)
@@ -34,4 +38,7 @@ FA
 
 ## TODO
 
-- Posibilidad para recibir el string de la etiqueta y solo enviarlo a la impresora para que lo imprima.
+- Generar ruta para recibir archivo zpl e impirmirlo.
+- Generar ejecutable para evitar el uso de consola de comandos en local
+- Testear en Windows
+- Modificar mensajes de estado para mejorra el UX en front.

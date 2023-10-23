@@ -6,9 +6,11 @@
   "scripts": {
     "dev": "nodemon ./src/index.ts",
     "build": "tsc",
-    "start": "mp2 start ./dist/index.js"
+    "start": "pm2 start ./dist/src/index.js",
+    "close": "pm2 kill ./dist/src/index.js"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.18.2",
     "jszpl": "^1.1.7",
     "pm2": "^5.3.0"
